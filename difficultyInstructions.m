@@ -1,4 +1,5 @@
 function difficultyInstructions(x)
+    %function displays additional instructions based on difficulty chosen
     switch x 
         case 1 
             fprintf('\nThere will only be 1 round. Win it and you win the match.\n');
@@ -12,6 +13,7 @@ function difficultyInstructions(x)
     end
         fprintf('The less turns used the higher the score.\n');
         fprintf('\nPress anything to continue.\n')
+        %pauses until keypress
         pause('on');
         pause;
         

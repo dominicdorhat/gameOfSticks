@@ -1,3 +1,4 @@
+%displays the amount of sticks left 
 function stickMsg(s)
      if s == 1
         disp('There is only 1 stick left on the table.');
