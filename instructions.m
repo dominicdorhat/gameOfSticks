@@ -15,6 +15,7 @@ function instructions
     answer = input('Input: ');
     
     if answer == 1
+        clear;
         %calls the menu function 
         menuUI();
         mainMenu();

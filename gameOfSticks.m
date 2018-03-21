@@ -124,9 +124,12 @@ function gameOfSticks
                         %generates number from 3 to 1
                         if sticks > 2
                             compSticks = randperm(3,1);
-                        %generates numner from 2 to 1
+                        %AI will take 1 stick, making it difficult for the
+                        %player
                         elseif sticks == 2
-                            compSticks = randperm(2,1);
+                            %compSticks = randperm(2,1);
+                            compSticks = 1;
+                            
                         %AI does not have 'luck survival' feature to prevent unfairness    
                         elseif sticks == 1
                             compSticks = 1;
@@ -250,8 +253,10 @@ function gameOfSticks
     
                         %calls the menu function    
                         if answer == 1
+                            clear;
                             menuUI();
                             mainMenu();
+                            
                         elseif answer == 2
                             %exit game
                             return
@@ -321,8 +326,10 @@ function gameOfSticks
     
                         %calls menu function
                         if answer == 1
+                            clear;
                             menuUI();
                             mainMenu();
+                            
                         elseif answer == 2
                             return
                         end
