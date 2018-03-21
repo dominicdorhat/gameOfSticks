@@ -1,4 +1,5 @@
 function gameOfSticks
+        clear;
         %initializes important variables
         sticks = 20;
         win = 0;
@@ -110,6 +111,7 @@ function gameOfSticks
                             %tracks the number of lost rounds
                             lose = lose + 1;
                             disp('You lost the round!');
+                            
                         end
                    
                         pause(1);
@@ -166,7 +168,6 @@ function gameOfSticks
                      answer = input('Input: ');
     
                      if answer == 1
-                        clear; 
                         %calls menu function
                         menuUI();
                         mainMenu();
@@ -253,7 +254,6 @@ function gameOfSticks
     
                         %calls the menu function    
                         if answer == 1
-                            clear;
                             menuUI();
                             mainMenu();
                             
@@ -326,7 +326,6 @@ function gameOfSticks
     
                         %calls menu function
                         if answer == 1
-                            clear;
                             menuUI();
                             mainMenu();
                             
