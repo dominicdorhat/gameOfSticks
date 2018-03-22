@@ -12,7 +12,16 @@ function instructions
     
     %prompts user to return to main menu 
     fprintf('\nReturn to main menu?[1 - Yes | 2 - No]\n');
-    answer = input('Input: ');
+    
+    %loops until user enters a valid input
+    while true
+        answer = str2double(input('Input: ', 's'));
+        if answer == 1 || answer == 2
+            break
+        else 
+            disp('Invalid input!');
+        end
+    end
     
     if answer == 1
         clear;

@@ -41,7 +41,15 @@ function highScore()
     
     %prompts user to menu
     fprintf('Return to main menu?[1 - Yes | 2 - No]\n');
-    answer = input('Input: ');
+    
+    while true
+        answer = str2double(input('Input: ', 's'));
+        if answer == 1 || answer == 2
+            break
+        else 
+            disp('Invalid input!');
+        end
+    end
     
     %calls menu function
     if answer == 1
